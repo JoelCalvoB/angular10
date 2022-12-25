@@ -1,0 +1,91 @@
+mat-form-field mat-label {
+    font-size: 16px;
+}
+
+mat-form-field.mat-form-field-should-float mat-label {
+    font-size: 12px;
+}
+
+.gnp-style-input{
+    margin-left: 16px;
+    width: 90%;
+    margin-top: 0.208em;
+    font-family: "Open Sans",sans-serif !important;
+    color: #0C2040 !important;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    mix-blend-mode: normal;
+}
+
+.gnp-style-input-disabled{
+    margin-top: 0.208em;
+    font-family: "Open Sans",sans-serif !important;
+    color: #0C2040 !important;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    mix-blend-mode: normal;
+}
+
+
+.gnp-style-label-input {
+    margin-left: 16px;
+    font-family: "Open Sans",sans-serif !important;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    color: #567099;
+}
+
+.gnp-style-select{
+    margin-left: 16px;
+    margin-top: 0.208em;
+    width: 95%;
+    font-family: "Open Sans",sans-serif !important;
+}
+
+.fuente-texto-gnp {
+    font-family: "Open Sans",sans-serif !important;
+}
+
+::ng-deep.mat-form-field-underline {
+    /*change color of underline*/
+    background-color: #AAC3EE !important;
+}
+
+//::ng-deep.mat-form-field-ripple {
+    /*change color of underline when focused*/
+ //   background-color: green !important;;
+//}
+
+.loading {
+    position: fixed;
+    z-index: 999;
+    height: 100%;
+    width: 100%;
+    overflow: visible;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.loading:before {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 29, 29, 0.796);
+}
+
+.ocultar {
+    display: none;
+}

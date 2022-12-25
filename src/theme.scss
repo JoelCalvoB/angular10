@@ -1,0 +1,85 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+$my-primary-color: (
+
+    300 : #f4a277,
+    400 : #f18e5a,
+    500 : #ef7a3d, //Color Naranja GNP
+    600 : #ed7237,
+    700 : #eb672f,
+
+    contrast: (
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+    )
+);
+
+$my-warn-color: (
+
+    300 : #e2544d,
+    400 : #dc2f26,
+    500 : #cd5a59, //Color Rojo GNP
+    600 : #d10900,
+    700 : #cc0700,
+
+    contrast: (
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+    )
+);
+
+$my-accent-color: (
+
+    50 : #e0e6ee,
+    100 : #b3c0d5,
+    200 : #8096ba,
+    300 : #4d6c9e,
+    400 : #264d89,
+    500 : #002d74, //Color azul GNP
+    600 : #00286c,
+    700 : #002261,
+    800 : #001c57,
+    900 : #001144,
+    A100 : #798bff,
+    A200 : #465fff,
+    A400 : #1332ff,
+    A700 : #0021f8,
+
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #ffffff,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+$palette-primary: mat-palette($my-primary-color);
+$palette-accent:  mat-palette($my-accent-color);
+$palette-warn:    mat-palette($my-warn-color);
+
+$light-theme:   mat-light-theme(
+        $palette-primary,
+        $palette-accent,
+        $palette-warn
+);
+
+
+@include angular-material-theme($light-theme);
+

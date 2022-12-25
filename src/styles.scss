@@ -1,0 +1,328 @@
+@import './theme.scss';
+@include angular-material-theme($light-theme);
+
+html, body { height: 100%; }
+body { margin: 0; padding: 0px;           font-family: "Open Sans", sans-serif;}
+
+//**** BOTONES GNP *****
+
+.bton-disabled-gnp{
+    background: #F6F9FD;
+    border-radius: 4px;
+    color: black;
+    height: 36px;
+    font-size: 16px;
+    letter-spacing: 1.25px;
+    font-family: "Open Sans",sans-serif;
+}
+
+.btn-naranja-gnp {
+    background: #FF6B0B;
+    color: #ffff;
+    border-radius: 4px;
+    height: 36px;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1.25px;
+    font-family: "Open Sans",sans-serif;
+}
+
+.btn-white-text-orange {
+    background: white;
+    color: #FF6B0B;
+    border-radius: 4px;
+    width: 120px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1.25px;
+    border: 2px solid #FF6B0B;
+    font-family: "Open Sans",sans-serif;
+}
+
+// **** textos de gnp ****
+.text-title-gnp-24px{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 40px;    
+    color: #33445F;
+    font-family: "Open Sans",sans-serif;
+}
+
+
+
+.text-subtitle-gnp-20px{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 40px;
+    letter-spacing: 0.15px;
+    color: #33445F;
+    font-family: "Open Sans",sans-serif;
+}
+
+.text-subtitle-gnp-20px-aux{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.15px;
+    color: #33445F;
+    font-family: "Open Sans",sans-serif;
+}
+
+.text-normal-gnp16px{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #33445F;
+    font-family: "Open Sans",sans-serif;
+}
+
+.text-normal-gnp16pxLine40px{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0.15px;
+    color: #002E71;
+    font-family: "Open Sans",sans-serif;
+}
+
+.text-normal-gnp16pxWeight600 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: #33445F;
+    font-family: "Open Sans",sans-serif;
+}
+
+.text-normal-gnp16pxWeight600-aux {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.15px;
+    color: #33445F;
+    font-family: "Open Sans",sans-serif;
+}
+
+
+.text-normal-gnp14px {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    color: #33445F;
+    font-family: "Open Sans",sans-serif;
+}
+
+.text-normal-h5-gnp24px {
+    /* Desktop / Encabezados / H5 */
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 40px;
+    color: #33445F;
+    font-family: "Open Sans",sans-serif;
+}
+
+.lineGraySeparador{
+    border-top: 1px solid #CED8E8;
+}
+
+.textLineGray {
+    text-align: left;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-top: 1px solid #CED8E8;
+
+    font-family: "Open Sans",sans-serif !important;
+    font-style: normal;
+    font-size: 10px;
+    line-height: 16px;
+    /* identical to box height, or 160% */
+
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    color: #647085;
+    padding-top: 7px;
+}
+
+//******** ESTILOS COMPONENTES MATERIAL ******
+
+/* MEDIDAS VERTICALES */
+.height100{
+    height: 100%;
+}
+
+.height90{
+    height: 90%;
+}
+
+.height80{
+    height: 80%;
+}
+
+.height70{
+    height: 70%;
+}
+
+.height60{
+    height: 60%;
+}
+
+.height50{
+    height: 50%;
+}
+
+.height40{
+    height: 40%;
+}
+
+.height30{
+    height: 30%;
+}
+
+.height20{
+    height: 20%;
+}
+
+.height10{
+    height: 10%;
+}
+
+/* MEDIDAS HORIZONTALES */
+.width100 {
+    width: 100%;
+}
+
+.width90 {
+    width: 90%;
+}
+
+.width80 {
+    width: 80%;
+}
+
+.width70 {
+    width: 70%;
+}
+
+.width60 {
+    width: 60%;
+}
+
+.width50 {
+    width: 50%;
+}
+
+.width40 {
+    width: 40%;
+}
+
+.width45 {
+    width: 45%;
+}
+
+.width30 {
+    width: 30%;
+}
+
+.width20 {
+    width: 20%;
+}
+
+.width10 {
+    width: 10%;
+}
+
+/* TAMAÑOS DE TEXTO */
+
+.fontSize50 { 
+    font-size: 50px;
+}
+
+.fontSize40 { 
+    font-size: 40px;
+}
+
+.fontSize30 { 
+    font-size: 30px;
+}
+
+.fontSize20 { 
+    font-size: 20px;
+}
+
+.fontSize15 {
+    font-size: 15px;
+}
+
+.fontSize10 { 
+    font-size: 10px;
+}
+
+/* Margin top */
+
+.marginTop10px {
+    margin-top: 10px
+}
+
+.marginTop20px {
+    margin-top: 20px
+}
+
+.marginTop30px {
+    margin-top: 30px
+}
+
+.textCenter{
+    text-align: center;
+}
+
+.text-label-forms{
+    color: rgb(141, 141, 141);
+    font-size: 11px;
+}
+
+.style-mat-error{
+    text-align: left;
+    margin-left: 16px !important;
+    margin-top: -10px;
+    font-family: "Open Sans",sans-serif;
+    opacity: 1;
+    font-size: .75rem;
+    line-height: 1.2;
+    letter-spacing: .5px;
+}
+
+.icon-check-form{
+    width: 20px;
+}
+
+.dialog-bg-trans {
+    background-color: rgba(0, 46, 113, 0.7);
+}
+
+.scroll {
+    overflow-x: auto; 
+    overflow-y: auto; 
+    text-align:justify; 
+}
+
+.blue-snackbar {
+    background: #ECF9F2;
+    width: 100%;
+    height: 60px;
+  }
+
+
+

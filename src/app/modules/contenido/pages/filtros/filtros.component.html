@@ -1,0 +1,98 @@
+<div class="cuerpo">
+
+    <form [formGroup]="Myform" >
+        <div class="cuerpoformulario">
+            <div class="cabecera">
+                <span>Eficiencias en prácticas</span>
+            </div>
+<!-- 
+            <div class="contenedor">
+                <div class="seccioni">
+                    <mat-form-field class="example">
+                        <mat-label class="gnp-style-label-input">Nombre completo</mat-label>
+                        <input class="gnp-style-input" matInput placeholder="Nombre" formControlName="nombre" >
+                    </mat-form-field>
+                    <mat-error *ngIf="f.nombre.errors?.required && f.nombre.touched">
+                        Campo obligatorio
+                    </mat-error>
+
+                    <mat-error *ngIf="f.nombre.errors?.pattern  && !f.nombre.errors?.space && f.nombre.touched">
+                        Información incorrecta
+                    </mat-error>  
+
+                    <mat-error *ngIf="f.nombre.errors?.space  && !f.nombre.errors?.pattern && f.nombre.touched">
+                        No se permiten espacios al inicio y/o al final
+                    </mat-error>  
+
+                    <mat-error *ngIf="f.nombre.errors?.pattern  && f.nombre.errors?.space && f.nombre.touched">
+                        Información incorrecta
+                    </mat-error>  
+                 
+                </div>
+
+                <div class="secciond">
+                    <mat-form-field class="example">
+                        <mat-label class="gnp-style-label-input">Primer apellido</mat-label>
+                        <input class="gnp-style-input" matInput placeholder="Primer apellido" 
+                            formControlName="primer_apellido">
+                    </mat-form-field>
+                    <mat-error *ngIf="f.primer_apellido.errors?.required && f.primer_apellido.touched">
+                        Campo obligatorio
+                    </mat-error>
+
+                    <mat-error *ngIf="f.primer_apellido.errors?.pattern  && !f.primer_apellido.errors?.space && f.primer_apellido.touched">
+                        Información incorrecta
+                    </mat-error>  
+
+                    <mat-error *ngIf="f.primer_apellido.errors?.space  && !f.primer_apellido.errors?.pattern && f.primer_apellido.touched">
+                        No se permiten espacios al inicio y/o al final
+                    </mat-error>  
+
+                    <mat-error *ngIf="f.primer_apellido.errors?.pattern  && f.primer_apellido.errors?.space && f.primer_apellido.touched">
+                        Información incorrecta
+                    </mat-error>  
+                </div>
+            </div> -->
+
+
+
+
+            <div class="contenedor">
+                <div class="seccioni">
+                    <mat-form-field class="example">
+
+                        <mat-label class="gnp-style-label-input">Criterio de busqueda </mat-label>
+                        <mat-select class="gnp-style-input" formControlName="municipio">
+                            <mat-option *ngFor="let item of Municipio" [value]="item">
+                                {{item}} </mat-option>
+                            <mat-option *ngIf="Municipio.length==0"> Espere... </mat-option>
+                        </mat-select>
+
+                    </mat-form-field>
+                    <mat-error *ngIf="f.municipio.errors?.required && f.municipio.touched">
+                        Campo obligatorio
+                    </mat-error>
+                 
+                </div>
+
+                <div class="secciond">
+     
+                </div>
+            </div>
+
+<div class="contenedor">
+    <div class="seccioni">
+        <button class="btn-continuar"  mat-button
+        type="submit"> Buscar</button>
+
+       <button class="btn-white-text-orange"  
+        type="submit"> Limpiar</button>
+    </div>
+</div>
+      
+         
+
+        </div>
+    </form>
+</div>
+
